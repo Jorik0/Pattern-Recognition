@@ -1,8 +1,15 @@
 function [besth,err] = testParzen(dataset,I,J)
-besth = -1;
+epsilon = 0.01;
+
+besth = 2;
 err = inf;
 dif = inf;
+step = 0.1;
+steps = 20;
 
-
+while (dif > epsilon)
+    for h = (besth-steps*step):step:(besth+steps*step)
+        e = testClassifier(dataset,I,J,parzenc([],h));
+    end
 end
 

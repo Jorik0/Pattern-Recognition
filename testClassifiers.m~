@@ -27,12 +27,9 @@ if (besterr > err)
 end
 
 err = testClassifier(dataset,I,J,neurc);
-fprintf('For size %d the mean error of the neural network classifier = %f\n',size,err);
+printf('For size %d the mean error of the neural network classifier =',size,err);
 if (besterr > err)
     besterr = err;
-    c = neurc;
-end
-
-err = besterr;
+    c = n
 end
 
