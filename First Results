@@ -1,0 +1,5 @@
+For Pixel Representation with size=10
+nmc is best parametric with mean error 0.336374
+knnc, best k = 1 with mean error 0.382813
+parzenc, best h = 0.5 with mean error 0.368247
+neural network mean error 0.753879

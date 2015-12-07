@@ -19,7 +19,7 @@ if (besterr > err)
    c = knnc([],bestk);
 end
 
-[besth,err] = testParzen(dataset,I,J)
+[besth,err] = testParzen(dataset,I,J);
 fprintf('For size %d the best h = %d, with mean error = %f \n',size,besth,err);
 if (besterr > err)
    besterr = err;
