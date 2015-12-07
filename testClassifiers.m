@@ -1,17 +1,19 @@
-function E = testClassifiers(dataset)
+function c = testClassifiers(dataset,size)
+clear I;
+clear J;
 
-c  = cell(1,9);
-c{1} = nmc;
-c{2} = ldc;
-c{3} = qdc;
-c{4} = fisherc;
-c{5} = loglc;
-c{6} = knnc;
-c{7} = parzenc;
-c{8} = bpxnc;
-c{9} = svc;
+for i=1:20
+    [~,~,I(:,i),J(:,i)] = gendat(dataset,ones(1,10)*size);
+end
 
-E = cleval(dataset,c,[100,2000,4000],5);
+[pc,err,txt] = testParametric(dataset,I,J);
 
+fprintf('For size %d the best paramatrix classifier = %s, with mean error = %f \n',size,txt,err);
+
+[k,err] = testknnc(dataset,I,J);
+
+fprintf('For size %d the best k = %d, with mean error = %f \n',size,k,err);
+
+c = knnc([],k);
 end
 

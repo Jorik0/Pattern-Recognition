@@ -1,0 +1,8 @@
+function [besth,err] = testParzen(dataset,I,J)
+besth = -1;
+err = inf;
+dif = inf;
+
+
+end
+
