@@ -7,8 +7,11 @@ best = -1;
 err = inf;
 
 for i = 1:size(classifiers,2)
-    fprintf('k = %s\n',text{i});
+    fprintf('%s',text{i});
+    
     e = testClassifier(dataset,I,J,classifiers{i});
+    
+    fprintf(', mean error = %f\n',e);
     
     if (err > e)
        err = e;
