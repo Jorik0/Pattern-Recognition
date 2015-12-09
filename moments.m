@@ -1,5 +1,6 @@
 function e = moments(im); %give im without 6's or 9's
-type = {'none','central','scaled','hu','zer'};
+%type = {'none','central','scaled','hu','zer'};
+type = {'scaled'};
 c = [];
 for i = 1:size(type,2)
 c = [c im_moments(im,type{i})];
