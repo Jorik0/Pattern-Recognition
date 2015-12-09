@@ -1,5 +1,150 @@
-For Pixel Representation with size=10
+For Pixel Representation with size=200 (8x8)
+ldc with mean error 0.170975
+knnc, best k = 1 with mean error 0.163219
+parzenc, best h = 0.25, with mean error 0.142519
+neural network mean error 0.389744
+
+pixel 20x20
+For size 200 the best paramatric classifier = ldc, with mean error = 0.158312
+For size 200 the best k = 1, with mean error = 0.094694 
+For size 200 the best h = 1, with mean error = 0.091431 
+For size 200 the mean error of the neural network classifier = 0.667431
+
+pixel 10x10
+For size 200 the best paramatric classifier = ldc, with mean error = 0.151862
+For size 200 the best k = 1, with mean error = 0.134481
+For size 200 the best h = 2.500000e-01, with mean error = 0.121669 
+For size 200 the mean error of the neural network classifier = 0.483119
+
+pixel 40x40 (size 200)
+doet er veel te lang over
+nmc, mean error = 0.900000
+ldc, mean error = 0.779475
+
+pixel 2x2
+For size 200 the best paramatric classifier = ldc, with mean error = 0.670662 
+For size 200 the best k = 20, with mean error = 0.867481
+For size 200 the best h = 5.000000e-01, with mean error = 0.669200
+For size 200 the mean error of the neural network classifier = 0.668888
+
+pixel 25x25
+nmc, mean error = 0.846000
+ldc, mean error = 0.192169
+qdc, mean error = 0.900000
+fisherc, mean error = 0.238656
+loglc, mean error = 0.315294
+For size 200 the best paramatric classifier = ldc, with mean error = 0.192169 
+For size 200 the best k = 1, with mean error = 0.090425
+For size 200 the best h = 1, with mean error = 0.088319
+For size 200 the mean error of the neural network classifier = 0.696088
+
+pixel 40x40 (alleen knnc + parzenc)
+For size 200 the best k = 1, with mean error = 0.086144 
+For size 200 the best h = 0, with mean error = 0.900000 (all h's equal)
+ook handmatig en met de build in functie kan ik geen goede h vinden voor parzen
+
+pixel 30x30 (alleen knnc + parzenc)
+For size 200 the best k = 1, with mean error = 0.088425 
+For size 200 the best h = 0, with mean error = 0.900000  (all h's equal)
+
+---------Op zoek naar de optimale classifier
+
+pixel 25x25 (alleen parzenc, epsilon = 0.001)
+Bij bijna alle h's is de mean error heel hoog (0.9), behalve voor 0 < h < 1.5
+For size 200 the best h = 1, with mean error = 0.088100 
+
+pixel 20x20 (alleen parzenc, epsilon = 0.001)
+0 < h < +-3
+For size 200 the best h = 1, with mean error = 0.089637 
+
+Denk dat het het niet heel erg waard is om de pixel representatie groter te maken dan 20x20 ten opzichte van trainingstijd vs error
+Dus de optimale classifier voor training size 200 is parzenc met h = 1 en mean error = 0.089637
+--------------------------------------------
+
+pixel 20x20 (alleen parametric)
+nmc, mean error = 0.195888
+ldc, mean error = 0.158225
+qdc, mean error = 0.900000
+fisherc, mean error = 0.202119
+loglc, mean error = 0.259050
+For size 200 the best paramatric classifier = ldc, with mean error = 0.158225 
+
+pixel 10x10 (alleen parametric)
+nmc, mean error = 0.214187
+ldc, mean error = 0.152519
+qdc, mean error = 0.455050
+fisherc, mean error = 0.181563
+loglc, mean error = 0.352400
+For size 200 the best paramatric classifier = ldc, with mean error = 0.152519 
+
+=============================================
+pixel 2x2
+nmc, mean error = 0.730040
+ldc, mean error = 0.726172
+qdc, mean error = 0.890727
+fisherc, mean error = 0.727364
+loglc, mean error = 0.723596
+For size 10 the best paramatric classifier = loglc, with mean error = 0.723596
+For size 10 the best k = 6, with mean error = 0.759217 
+For size 10 the best h = 5.000000e-01, with mean error = 0.723015 
+For size 10 the mean error of the neural network classifier = 0.723788
+
+For Pixel Representation with size=10 (8x8)
 nmc is best parametric with mean error 0.336374
 knnc, best k = 1 with mean error 0.382813
 parzenc, best h = 0.5 with mean error 0.368247
 neural network mean error 0.753879
+
+pixel 10x10
+nmc, mean error = 0.315717
+ldc, mean error = 0.701616
+qdc, mean error = 0.900000
+fisherc, mean error = 0.844182
+loglc, mean error = 0.845384
+For size 10 the best paramatric classifier = nmc, with mean error = 0.315717 
+For size 10 the best k = 1, with mean error = 0.355111 
+For size 10 the best h = 1, with mean error = 0.345369 
+For size 10 the mean error of the neural network classifier = 0.733929
+
+pixel 15x15 (geen neural)
+nmc, mean error = 0.278308
+ldc, mean error = 0.900000
+qdc, mean error = 0.900000
+fisherc, mean error = 0.443641
+loglc, mean error = 0.429747
+For size 10 the best paramatric classifier = nmc, with mean error = 0.278308 
+For size 10 the best k = 1, with mean error = 0.315904
+For size 10 the best h = 1, with mean error = 0.310990 
+
+pixel 20x20
+nmc, mean error = 0.281389
+ldc, mean error = 0.900000
+qdc, mean error = 0.900000
+fisherc, mean error = 0.371717
+loglc, mean error = 0.366192
+For size 10 the best paramatric classifier = nmc, with mean error = 0.281389 
+For size 10 the best k = 1, with mean error = 0.306152
+For size 10 the best h = 1.500000e+00, with mean error = 0.303354 
+For size 10 the mean error of the neural network classifier = 0.732000
+
+pixel 25x25 (geen neural meer)
+nmc, mean error = 0.851172
+ldc, mean error = 0.900000
+qdc, mean error = 0.900000
+fisherc, mean error = 0.338975
+loglc, mean error = 0.338601
+For size 10 the best paramatric classifier = loglc, with mean error = 0.338601 
+For size 10 the best k = 1, with mean error = 0.296515
+For size 10 the best h = 1, with mean error = 0.295116 
+
+pixel 30x30 (alleen knnc + parzenc)
+For size 10 the best k = 1, with mean error = 0.299859 
+For size 10 the best h = 0, with mean error = 0.900000  (geen enkele goede h)
+
+---------Optimale Classifier
+de optimale classifier voor een training size van 10 per object is nmc. 
+Met een pixel representatie grootte van +- 15x15-20x20.
+----------------------------
+====================================================================
+
+!!! real size (op basis van eerste 100 plaatjes) = 34x39 !!!
