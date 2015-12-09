@@ -6,8 +6,12 @@ bestk = -1;
 err = inf;
 
 for k=1:maxk
-    fprintf('k = %d\n',k);
+    fprintf('k = %d',k);
+    
     e = testClassifier(dataset,I,J,knnc([],k));
+    
+    fprintf(', mean error = %f\n',e);
+    
     if (err > e)
        bestk = k;
        err = e;

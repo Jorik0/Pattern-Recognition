@@ -12,8 +12,11 @@ while (dif > epsilon)
     olderr = err;
     
     for h = (besth-steps*step):step:(besth+steps*step)        
-        fprintf('h = %d\n',h);
+        fprintf('h = %d',h);
+        
         e = testClassifier(dataset,I,J,parzenc([],h));
+        
+        fprintf(', mean error = %f\n',e);
         
         if (err > e)
             err = e;
@@ -23,6 +26,6 @@ while (dif > epsilon)
     
     dif = olderr - err;
     step = step/2.0;
-    steps = 2;
+    steps = 1;
 end
 
