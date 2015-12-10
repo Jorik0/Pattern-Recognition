@@ -1,6 +1,9 @@
-function [besth,err] = testParzen(dataset,I,J)
+function [besth,err] = testParzen(dataset,I,J,epsilon)
 disp('testing parzen');
-epsilon = 0.01;
+
+if(~exist('epsilon', 'var'))
+    epsilon = 0.01;
+end
 
 besth = 2;
 err = inf;
@@ -11,7 +14,7 @@ steps = 2;
 while (dif > epsilon)
     olderr = err;
     
-    for h = (besth-steps*step):step:(besth+steps*step)        
+    for h = (besth-steps*step):step:(besth+steps*step)
         fprintf('h = %d',h);
         
         e = testClassifier(dataset,I,J,parzenc([],h));
