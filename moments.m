@@ -1,6 +1,6 @@
 function e = moments(im); 
 %type = {'none','central','scaled','hu','zer'};
-type = {'none'};
+type = {'none','central'};
 c = [];
 
 sets = {[0 1 2 3 4],[0 1 2 3 4]};
@@ -13,4 +13,4 @@ end
 
 c = [c im_features(im,im,'all')];
 
-e = testClassifiers(c,200);
+e = c;%testClassifiers(c,200);

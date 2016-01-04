@@ -1,0 +1,21 @@
+fisherm {none,central(,all im_features)} naar 9 dim
+nmc, mean error = 0.076988
+ldc, mean error = 0.074137
+qdc, mean error = 0.066400
+fisherc, mean error = 0.077919
+loglc, mean error = 0.066031
+For size 200 the best paramatric classifier = loglc, with mean error = 0.066031
+For size 200 the best k = 7, with mean error = 0.062013
+For size 200 the best h = 1, with mean error = 0.063106
+For size 200 the mean error of the neural network classifier = 0.068044
+
+PCA
+nmc, mean error = 0.773737
+ldc, mean error = 0.143012
+qdc, mean error = 0.162300
+fisherc, mean error = 0.070169
+loglc, mean error = 0.239987
+For size 200 the best paramatric classifier = fisherc, with mean error = 0.070169
+For size 200 the best k = 6, with mean error = 0.543813
+For size 200 the best h = 0, with mean error = 0.900000
+For size 200 the mean error of the neural network classifier = 0.164919
