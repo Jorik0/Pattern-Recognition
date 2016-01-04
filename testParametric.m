@@ -1,4 +1,4 @@
-function [c,err,str] = testParametric(dataset,I,J)
+function [c,err,str] = testParametric(ds,I,J)
 disp('testing parametric');
 text = {'nmc','ldc','qdc','fisherc','loglc'};
 classifiers = {nmc,ldc,qdc,fisherc,loglc};
@@ -9,7 +9,7 @@ err = inf;
 for i = 1:size(classifiers,2)
     fprintf('%s',text{i});
     
-    e = testClassifier(dataset,I,J,classifiers{i});
+    e = testClassifier(ds,I,J,classifiers{i});
     
     fprintf(', mean error = %f\n',e);
     

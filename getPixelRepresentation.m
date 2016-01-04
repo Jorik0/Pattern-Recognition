@@ -1,6 +1,6 @@
-function [dataset] = getPixelRepresentation(im)
+function [ds] = getPixelRepresentation(im)
 im = im_box(im,0,1);
 im = im_resize(im,[20 20]);
-dataset = prdataset(im);
+ds = prdataset(im);
 end
 
