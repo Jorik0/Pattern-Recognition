@@ -1,0 +1,63 @@
+20x20 eucl-m (met slechtere feature selection methode, dus behoorlijk nutteloos)
+nmc, mean error = 0.205813
+ldc, mean error = 0.151750
+qdc, mean error = 0.444319
+fisherc, mean error = 0.193188
+loglc, mean error = 0.273125
+For size 200 the best paramatric classifier = ldc, with mean error = 0.151750
+For size 200 the best k = 1, with mean error = 0.100650
+For size 200 the best h = 1, with mean error = 0.095925
+For size 200 the mean error of the neural network classifier = 0.558637
+---
+nmc, mean error = 0.895273
+ldc, mean error = 0.895278
+qdc, mean error = 0.900000
+fisherc, mean error = 0.895045
+loglc, mean error = 0.895263
+For size 10 the best paramatric classifier = fisherc, with mean error = 0.895045
+For size 10 the best k = 5, with mean error = 0.897571
+For size 10 the best h = 2, with mean error = 0.895424 
+For size 10 the mean error of the neural network classifier = 0.895419
+----------------------------------------------------------------------------------
+20x20 eucl-m
++- 380 features
+nmc, mean error = 0.278859
+ldc, mean error = 0.900000
+qdc, mean error = 0.900000
+fisherc, mean error = 0.366899
+loglc, mean error = 0.365606
+For size 10 the best paramatric classifier = nmc, with mean error = 0.278859
+For size 10 the best k = 1, with mean error = 0.300247
+For size 10 the best h = 1.500000e+00, with mean error = 0.296657
+For size 10 the mean error of the neural network classifier = 0.719379
+
++- 400 features
+nmc, mean error = 0.196750
+ldc, mean error = 0.157081
+qdc, mean error = 0.900000
+fisherc, mean error = 0.201638
+loglc, mean error = 0.256600
+For size 200 the best paramatric classifier = ldc, with mean error = 0.157081
+For size 200 the best k = 1, with mean error = 0.094200
+For size 200 the best h = 1, with mean error = 0.090681
+For size 200 the mean error of the neural network classifier = 0.665987
+--------
+20x20 eucl-s
++-390 features
+nmc, mean error = 0.280005
+ldc, mean error = 0.900000
+qdc, mean error = 0.900000
+fisherc, mean error = 0.381970
+loglc, mean error = 0.378015
+For size 10 the best paramatric classifier = nmc, with mean error = 0.280005
+For size 10 the best k = 1, with mean error = 0.310096
+For size 10 the best h = 1.500000e+00, with mean error = 0.307076
+For size 10 the mean error of the neural network classifier = 0.732692
+
++-400 (maar nu bijna alleen maar 400) (size 200)
+Nogal nutteloos om dan dingen te gaan testen
+---
+20x20 in-in (inner intra distance)
+Hier krijg ik een hele boel fouten over singular matrices
+
+Conclusie: Feature selection is nutteloos voor pixel representatie (zie ook de grafiek)

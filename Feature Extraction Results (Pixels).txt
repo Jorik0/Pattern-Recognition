@@ -1,0 +1,21 @@
+20x20 PCA (N = inf, dus 400 PCA features gesorteerd)
+nmc, mean error = 0.195725
+ldc, mean error = 0.158837
+qdc, mean error = 0.900000
+fisherc, mean error = 0.202594
+loglc, mean error = 0.259719
+For size 200 the best paramatric classifier = ldc, with mean error = 0.158837
+For size 200 the best k = 1, with mean error = 0.093169
+For size 200 the best h = 1, with mean error = 0.090569
+For size 200 the mean error of the neural network classifier = 0.761294
+
+nmc, mean error = 0.278596
+ldc, mean error = 0.295076
+qdc, mean error = 0.900000
+fisherc, mean error = 0.369399
+loglc, mean error = 0.369399
+For size 10 the best paramatric classifier = nmc, with mean error = 0.278596
+For size 10 the best k = 1, with mean error = 0.304889
+For size 10 the best h = 1.500000e+00, with mean error = 0.302323
+For size 10 the mean error of the neural network classifier = 0.711657
+

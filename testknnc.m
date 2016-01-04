@@ -1,4 +1,4 @@
-function [bestk,err] = testknnc(dataset,I,J)
+function [bestk,err] = testknnc(dataset,I,J,fs)
 disp('testing knnc');
 maxk = 20;
 
@@ -8,7 +8,7 @@ err = inf;
 for k=1:maxk
     fprintf('k = %d',k);
     
-    e = testClassifier(dataset,I,J,knnc([],k));
+    e = testClassifier(dataset,I,J,knnc([],k),fs);
     
     fprintf(', mean error = %f\n',e);
     

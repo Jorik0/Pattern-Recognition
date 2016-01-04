@@ -1,0 +1,5 @@
+Wat betekenen de grafieken
+featuresize = feature curves grafieken
+ordered = gesorteerd op eucl-m
+orderedparzen = gesorteerd op parzenc([],1)
+nmc = gesorteerd op nmc
