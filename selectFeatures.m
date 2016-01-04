@@ -1,10 +1,10 @@
-function fs = selectFeatures(dataset,crit)
-w = featseli(dataset,crit);
+function fs = selectFeatures(ds,crit)
+w = featseli(ds,crit);
 
 best = -inf;
 besti = 0;
-for i = 1:size(dataset,2)
-    J = feateval(dataset*w(:,1:i),crit);
+for i = 1:size(ds,2)
+    J = feateval(ds*w(:,1:i),crit);
     
     if (J > best)
         best = J;
