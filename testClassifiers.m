@@ -5,7 +5,7 @@ clear J;
 for i=1:20
     [~,~,I(:,i),J(:,i)] = gendat(ds,ones(1,10)*size);
     
-    fs{i} = pcam(ds(I(:,i),:),30);
+    fs{i} = pcam(ds(I(:,i),:));
     
     fprintf('Created sets + feature extraction %d \n',i);
 end
