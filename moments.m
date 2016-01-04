@@ -11,4 +11,6 @@ for i = 1:size(type,2)
 c = [c im_moments(im,type{i},cartProd)];
 end
 
+c = [c im_features(im,im,'all')];
+
 e = testClassifiers(c,200);
