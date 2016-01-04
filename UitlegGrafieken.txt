@@ -3,3 +3,6 @@ featuresize = feature curves grafieken
 ordered = gesorteerd op eucl-m
 orderedparzen = gesorteerd op parzenc([],1)
 nmc = gesorteerd op nmc
+
+PCA = PCA features gesorteerd (1 is basis grafiek en 2 is 'ingezoomd')
+QDC = Met qdc ipv nmc + parzen

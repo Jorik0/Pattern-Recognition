@@ -1,6 +1,9 @@
-function featureEval(ds,modifier,classifiers,size)
+function featureEval(ds,modifier,classifiers,size,featsizes)
 ntimes = 4;
-featsizes = [1,10,50,150,200,250,300,350,400];
+
+if(~exist('featsizes', 'var'))
+    featsizes = [1,10,50,150,200,250,300,350,400];
+end
 
 error = 0;
 aError = 0;
