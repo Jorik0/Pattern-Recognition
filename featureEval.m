@@ -23,5 +23,3 @@ E.ylabel = sprintf('Averaged error (%d experiments)',ntimes);
 E.plot = 'plot';
 
 plote(E);
-
-
