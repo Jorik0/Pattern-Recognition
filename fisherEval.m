@@ -40,6 +40,5 @@ end
 E.names = char(names);
 
 plote(E);
-
 end
 
